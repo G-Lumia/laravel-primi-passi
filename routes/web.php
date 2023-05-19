@@ -14,5 +14,14 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('home');
+    $data = [
+        'page_title' => 'Welcome Page',
+        'description' => 'Click a link to change page',
+        'links' => [
+            'contacts',
+            'about-us',
+            'jerry',
+        ]
+    ];
+    return view('home' , $data);
 });

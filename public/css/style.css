@@ -1,0 +1,24 @@
+.wrapper{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.linksList{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.linksList a{
+    text-decoration: none;
+    color:green;
+}
+
+.linksList a:hover{
+    text-decoration: none;
+    color: red;
+    transition: 0.5s;
+}
