@@ -20,16 +20,18 @@
     </head>
     <body class="antialiased">
         <div class="wrapper">
-            <h1>
-               Benvenuto!
-            </h1>
-            <p>
-                {{$description}}
-            </p>
-            <div class="linksList">
-                @foreach ( $links as $link)
-                    <a href="/{{$link}}"> {{$link}} </a>
-                @endforeach
+            <div class="pageHeader">
+                <h1>
+                   Benvenuto!
+                </h1>
+                <p>
+                    {{$description}}
+                </p>
+                <div class="linksList d-flex">
+                    @foreach ( $links as $link)
+                        <a href="/{{$link}}"> {{$link}} </a>
+                    @endforeach
+                </div>
             </div>
         </div>
     </body>
